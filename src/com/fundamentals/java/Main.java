@@ -1,13 +1,29 @@
 package com.fundamentals.java;
 
 import com.fundamentals.lessons.Lesson5;
+import com.fundamentals.lessons.Lesson6;
 
 public class Main {
 
     public static void main(String[] args) {
-	 // lesson4Examples();
-        lesson5Examples();
+	   // lesson4Examples();
+       // lesson5Examples();
+        lesson6Examples();
     }
+
+    public static void lesson6Examples() {
+        Lesson6 myLesson6 = new Lesson6();
+        myLesson6.exampleCharAt();
+        myLesson6.exampleConcat();
+        boolean val = myLesson6.exampleEquals();
+        System.out.println(val);
+        String str1 =  myLesson6.exampleLowercase("HAPPY");
+        myLesson6.exampleUppercase("example");
+        System.out.println(myLesson6.exampleLength());
+        myLesson6.exampleBuilder("Spaghetti", 2);
+        myLesson6.exampleChar();
+        myLesson6.exampleEscape();
+    } // end method
 
     public static void lesson5Examples() {
         Lesson5 myLesson5 = new Lesson5();
