@@ -2,14 +2,31 @@ package com.fundamentals.java;
 
 import com.fundamentals.lessons.Lesson5;
 import com.fundamentals.lessons.Lesson6;
+import com.fundamentals.lessons.Lesson7;
 
 public class Main {
 
     public static void main(String[] args) {
 	   // lesson4Examples();
        // lesson5Examples();
-        lesson6Examples();
+       // lesson6Examples();
+        lesson7Examples();
     }
+
+    public static void lesson7Examples() {
+        Lesson7 myLesson7 = new Lesson7();
+        myLesson7.exampleArithmatic();
+        //myLesson7.addTwoNumbers(); // uncomment to test
+        myLesson7.exampleAssignment();
+        myLesson7.exampleAnd();
+        myLesson7.exampleOr();
+        myLesson7.exampleXor();
+        myLesson7.exampleLeftShift();
+        myLesson7.exampleRightShift();
+        myLesson7.exampleRelational();
+        myLesson7.exampleIncrement();
+        myLesson7.exampleDecrement();
+    } // end method
 
     public static void lesson6Examples() {
         Lesson6 myLesson6 = new Lesson6();
