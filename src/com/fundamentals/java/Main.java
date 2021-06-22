@@ -12,7 +12,37 @@ public class Main {
        // lesson8Examples();
        // moreLesson8();
         //song();
-        lesson9Examples();
+        //lesson9Examples();
+        //lesson10Examples();
+        //houseConstructorExample();
+        lesson11Examples();
+    }
+
+    public static void lesson11Examples() {
+        Lesson11 myEleven = new Lesson11("Kansas City");
+        System.out.println(myEleven.getfName() + " " +
+                myEleven.getlName() + " is from " + myEleven.getCity());
+    }
+
+    public static void houseConstructorExample() {
+        House house1 = new House();
+        house1.setDoorColor("Green");
+        System.out.println(house1.getDoorColor());
+
+        House house2 = new House("red");
+        //System.out.println(house2.getFoundationType()); // prints null
+
+        House house3 = new House("blue","metal",
+                "bamboo",32);
+        System.out.println(house3.getRoofStyle());
+    } // end method
+
+    public static void lesson10Examples() {
+        Lesson10 myTen = new Lesson10();
+        myTen.showPublicExample();
+
+        Lesson10Demo myTenDemo = new Lesson10Demo();
+        myTenDemo.showOtherModifiers();
     }
 
     public static void lesson9Examples() {
