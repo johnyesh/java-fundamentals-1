@@ -15,8 +15,33 @@ public class Main {
         //lesson9Examples();
         //lesson10Examples();
         //houseConstructorExample();
-        lesson11Examples();
+       // lesson11Examples();
+       // condoExample();
+        lesson12Examples();
     }
+
+    // also uses lesson 13
+    public static void lesson12Examples() {
+        Lesson12Child1 child1 = new Lesson12Child1(5);
+        System.out.println(child1.calculateArea());
+        System.out.println("h " + child1.getHeight());
+
+        Lesson12 myLesson12 = new Lesson12Child2(5, 10);
+        System.out.println(myLesson12.calculateArea());
+
+        Lesson12 my12 = new Lesson12Child1(5);
+        System.out.println(my12.calculateArea());
+
+    } // end method
+
+    public static void condoExample() {
+        Condo myCondo = new Condo();
+        myCondo.setBalcony("Small");
+        myCondo.doorOpenClose(); // from Condo class override
+        myCondo.doorOpenClose("closed"); // from House class
+        myCondo.setDoorColor("blue"); // from House class
+        myCondo.maintenance();
+    } // end method
 
     public static void lesson11Examples() {
         Lesson11 myEleven = new Lesson11("Kansas City");

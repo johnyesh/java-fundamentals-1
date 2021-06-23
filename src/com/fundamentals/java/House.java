@@ -62,4 +62,8 @@ public class House {
         System.out.println("The door is open");
     } // end method
 
+    public void doorOpenClose(String status) {
+        System.out.println("The door is " + status);
+    } // end method
+
 } // end class
