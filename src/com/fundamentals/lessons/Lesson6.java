@@ -53,6 +53,8 @@ public class Lesson6 {
         System.out.println(fav);
     } // end method
 
+    // variable = (condition) ? expressionTrue :  expressionFalse;
+
     // 00A9
     // Method for showing the char data type
     public void exampleChar() {
@@ -68,5 +70,6 @@ public class Lesson6 {
     public void exampleEscape() {
         System.out.println("That\'s a \ncool game.\tCan I pla\by?");
     } // end method
+
 
 } // end class

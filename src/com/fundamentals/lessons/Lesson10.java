@@ -11,7 +11,7 @@ public class Lesson10 {
     } // end method
 
     // This method is only seen within the package name
-    void showDefaultExample() {
+   void showDefaultExample() {
         System.out.println("This is a default modifier method");
     } // end method
 
