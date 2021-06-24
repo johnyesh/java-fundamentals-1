@@ -4,6 +4,17 @@ import com.fundamentals.lessons.*;
 
 public class Main {
 
+    public static int num = 0;
+
+    static {
+        num = 42;
+        System.out.println("Static Block 1 = " + num);
+    }
+    static {
+        num = 63;
+        System.out.println("Static Block 2 = " + num);
+    }
+
     public static void main(String[] args) {
 	   // lesson4Examples();
        // lesson5Examples();
@@ -17,8 +28,26 @@ public class Main {
         //houseConstructorExample();
        // lesson11Examples();
        // condoExample();
-        lesson12Examples();
+       // lesson12Examples();
+        lesson14Examples();
     }
+
+    public static void lesson14Examples() {
+        //Can not change a value of a final variable
+       // Lesson14.MY_FIRST_FINAL = 10;
+        int total = Lesson14.MY_FIRST_FINAL + 20;
+        System.out.println(total);
+
+        // Can change a value of a non-final static
+        Lesson14.myFirstStatic = 40;
+        System.out.println(Lesson14.myFirstStatic);
+
+        Lesson14.myStaticMethodExample(10);
+
+        Lesson14.MyInnerClass myInnerClass = new Lesson14.MyInnerClass();
+        myInnerClass.myInnerMethod();
+
+    } // end method
 
     // also uses lesson 13
     public static void lesson12Examples() {
