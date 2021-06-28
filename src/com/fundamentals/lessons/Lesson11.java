@@ -5,9 +5,9 @@ package com.fundamentals.lessons;
 * Constructors & Encapsulation
 * */
 public class Lesson11 {
-    String fName;
-    String lName;
-    String city;
+    private String fName;
+    private String lName;
+    private String city;
 
     public Lesson11(String city) {
         this("John", "Doe", city);

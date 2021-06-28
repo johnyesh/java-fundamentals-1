@@ -29,7 +29,32 @@ public class Main {
        // lesson11Examples();
        // condoExample();
        // lesson12Examples();
-        lesson14Examples();
+       // lesson14Examples();
+       // test();
+        lesson15Example();
+    }
+
+    public static void lesson15Example() {
+        int[] myKeys = {0,1,2,3,4,5,6,7,8,9};
+        Lesson15Child myIPhone = new Lesson15Child(25,myKeys,
+                0, "Color Screen");
+        myIPhone.sendCall();
+        myIPhone.holdCall();
+        System.out.println(myIPhone.getScreen());
+
+        // Abstract object through its child class only
+        Lesson15Abstract blackberry = new Lesson15Child(10, myKeys,
+                -1, "monchrome");
+        blackberry.receiveCall();
+    } // end method
+
+    public static void test() {
+        House house = new House("Red");
+        //house.setDoorColor("Blue");
+        System.out.println(house.getDoorColor() + " FROM GETTER");
+
+        House house2 = new House("Green");
+        System.out.println(house2.getDoorColor() + "FROM GETTER");
     }
 
     public static void lesson14Examples() {
@@ -60,6 +85,7 @@ public class Main {
 
         Lesson12 my12 = new Lesson12Child1(5);
         System.out.println(my12.calculateArea());
+
 
     } // end method
 

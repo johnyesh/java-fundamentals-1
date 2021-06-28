@@ -13,9 +13,9 @@ public class House {
     } // end constructor
 
     // Constructor with 1 parameter
-    public House(String colorDoor) {
-        this.doorColor = colorDoor;
-        System.out.println("The door color is " + colorDoor);
+    public House(String doorColor) {
+        this.doorColor = doorColor;
+        System.out.println("The door color is " + doorColor);
     } // end constructor
 
     public House(String colorDoor, String styleRoof,

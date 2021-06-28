@@ -12,6 +12,12 @@ public class Condo extends House {
         System.out.println("Default condo constructor");
     } // end constructor
 
+    public Condo(String colorDoor, String styleRoof,
+                 String typeFoundation, int sizeWindow, String balcony) {
+        super(colorDoor, styleRoof, typeFoundation, sizeWindow);
+        this.balcony = balcony;
+    }
+
     public String getBalcony() {
         return balcony;
     } // end method
