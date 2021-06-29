@@ -31,8 +31,27 @@ public class Main {
        // lesson12Examples();
        // lesson14Examples();
        // test();
-        lesson15Example();
+       // lesson15Example();
+        lesson16Example();
     }
+
+    public static void lesson16Example() {
+        Lesson16 my16 = new Lesson16();
+        my16.showEnum();
+
+        my16.myFavoriteFlavor(Lesson16.IceCreamFlavors.ROCK_ROAD);
+
+        Lesson16Enum[] days = Lesson16Enum.values();
+        for(Lesson16Enum day : days) {
+            System.out.println(day + " at index " + day.ordinal());
+        } // for-each loop version of the for loop
+
+        for(Lesson16Enum dayVal : days) {
+            System.out.println("Day Name: " + dayVal.toString() +
+                    " Day Number: " + dayVal.getDayNum());
+        } // end for-each loop
+
+    } // end method
 
     public static void lesson15Example() {
         int[] myKeys = {0,1,2,3,4,5,6,7,8,9};
