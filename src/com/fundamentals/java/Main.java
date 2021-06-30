@@ -32,7 +32,17 @@ public class Main {
        // lesson14Examples();
        // test();
        // lesson15Example();
-        lesson16Example();
+      //  lesson16Example();
+        lesson17Example();
+    }
+
+    public static void lesson17Example() {
+        Lesson17 my17 = new Lesson17();
+        my17.exampleArrayList1();
+        my17.exampleArrayList2();
+        my17.exampleArrayListHouse();
+        my17.exampleHashSet();
+        my17.exampleHashMap();
     }
 
     public static void lesson16Example() {
