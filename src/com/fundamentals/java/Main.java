@@ -33,8 +33,18 @@ public class Main {
        // test();
        // lesson15Example();
       //  lesson16Example();
-        lesson17Example();
+       // lesson17Example();
+        lesson18Example();
     }
+
+    public static void lesson18Example() {
+        Lesson18 my18 = new Lesson18();
+      //  my18.exampleThrows();
+      //  my18.exampleException1();
+      //  my18.exampleException2();
+      //  my18.exampleFinally();
+        my18.myArrayException();
+    } // end method
 
     public static void lesson17Example() {
         Lesson17 my17 = new Lesson17();
